@@ -9,7 +9,7 @@ function LineGraph(props) {
                 labels: props.label.map(l => l.substr(0, 10)),
                 datasets: [
                     {
-                        label: '# of Votes',
+                        label: "covid 19 stats",
                         data: props.yAxis,
                         fill: true,
                         backgroundColor: 'rgb(255, 99, 132)',
