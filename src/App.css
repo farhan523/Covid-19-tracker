@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+*{
+  box-sizing: border-box;
+
+}
+
+.card{
+  background-color: white;
+  padding:20px;
+  box-sizing: 0 0 10px 0;
+  border:1px solid grey;
+}
