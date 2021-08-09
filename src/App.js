@@ -52,12 +52,13 @@ function App() {
   }
 
   const countryHandler = (e) => {
-    setCountry(e.target.value)
+
     const d = new Date()
     const to = formatDate(d)
     const from = formatDate(d.setDate(d.getDate() - days))
 
     getCoronaReportByDateRange(e.target.value, from, to)
+    setCountry(e.target.value)
   }
 
   // const dateHandler = (e) => {
@@ -83,10 +84,11 @@ function App() {
 
         let covidDetails = covidSummary.Countries.filter((d) => { return d.Slug === country })
         setTotalConfirmed(covidDetails[0].TotalConfirmed)
-        setCoronaCountAr(yAxisCoronaCount)
+
         setTotalRecovered(covidDetails[0].TotalRecovered)
         setTotalDeath(covidDetails[0].TotalDeaths)
         setLable(xAxisLabel)
+        setCoronaCountAr(yAxisCoronaCount)
 
       })
       .catch((err) => {
