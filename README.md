@@ -1,5 +1,5 @@
 # this Project is hosted on surge
-Tracker-Corona_Virus.surge.sh
+http://tracker-corona_virus.surge.sh/
 
 
 # Getting Started with Create React App
